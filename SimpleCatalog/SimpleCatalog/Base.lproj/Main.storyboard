@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="VZk-Cy-bEW">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="nGC-le-9HZ">
+            <objects>
+                <navigationController id="VZk-Cy-bEW" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xZe-em-G8Y">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="m62-1d-lT7" kind="relationship" relationship="rootViewController" id="UAT-Sj-g1O"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ubh-ep-cj2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-740" y="172"/>
+        </scene>
+        <!--Nespresso-->
+        <scene sceneID="ejE-9B-a4Y">
+            <objects>
+                <tableViewController id="m62-1d-lT7" customClass="SimpleCatalogTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" id="a0n-Tg-MI5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="m62-1d-lT7" id="xz8-N9-9rl"/>
+                            <outlet property="delegate" destination="m62-1d-lT7" id="Vtv-52-Hvp"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Nespresso" id="V6n-o6-tk2"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gdr-xk-Umf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="12" y="172"/>
+        </scene>
+    </scenes>
+</document>
